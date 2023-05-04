@@ -568,6 +568,13 @@ Installed:
 Complete!
 ```
 
+- [ ] Kill Container press `^]` :three: times within `1s`
+
+```yaml
+[root@localhost ~]# 
+Container core-docker.iolibraryfedora-latest terminated by signal KILL.
+core@localhost ~ $ 
+```
 # References
 
 - [ ] [Using eBPF in Flatcar Container Linux](https://www.flatcar.org/blog/2021/04/using-ebpf-in-flatcar-container-linux/)
