@@ -101,6 +101,23 @@ Press ^] three times within 1s to kill container.
 [root@localhost ~]# 
 ```
 
+## :ab: In the container
+
+- [ ] Check [DNF](https://en.wikipedia.org/wiki/DNF_(software)) version
+
+```
+dnf --version
+```
+> Outputs :
+```yaml
+4.14.0
+  Installed: dnf-0:4.14.0-2.fc38.noarch at Fri Apr 14 09:39:48 2023
+  Built    : Fedora Project at Thu Jan 19 01:46:14 2023
+
+  Installed: rpm-0:4.18.1-1.fc38.x86_64 at Fri Apr 14 09:39:49 2023
+  Built    : Fedora Project at Wed Mar 15 14:26:01 2023
+```
+
 - [ ] Install [BCC - Tools](https://github.com/iovisor/bcc) for BPF-based Linux IO analysis, networking, monitoring, and more
 
 ```
