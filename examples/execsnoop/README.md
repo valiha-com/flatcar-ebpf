@@ -102,10 +102,34 @@ docker container run \
 ```
 > root@d80c76a6e764:/# 
 
+- [ ] Start the `execsnoop` 
+
 ```
 execsnoop
 ```
 > Returns :
 ```yaml
 PCOMM            PID    PPID   RET ARGS
+```
+
+- [ ] Open another `SSH` connection to the VM
+
+```
+ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -p 2222 core@localhost
+```
+
+Type any commands:
+```
+ls -l
+```
+
+You should see the below output in the execsnoop container
+
+```
+execsnoop
+```
+> Outputs :
+```yaml
+PCOMM            PID    PPID   RET ARGS
+ls               12521  7004     0 /usr/bin/ls --color=auto -l 
 ```
