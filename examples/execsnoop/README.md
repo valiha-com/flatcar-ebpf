@@ -123,7 +123,7 @@ Type any commands:
 ls -l
 ```
 
-You should see the below output in the execsnoop container
+You should see the below output in the `execsnoop` container
 
 ```
 execsnoop
