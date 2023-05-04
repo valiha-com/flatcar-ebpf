@@ -1,29 +1,29 @@
 # flatcar-ebpf
 
-```
-wget https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_qemu_image.img.bz2
-```
 
-
-```
-bzip2 -d flatcar_production_qemu_image.img.bz2
-```
-
-
-```
-wget https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_qemu.sh
-```
-
-```
-chmod +x flatcar_production_qemu.sh
-```
-
-- [ ] On MacOS :apple:
+:round_pushpin: On MacOS :apple: Install the [QEMU](https://www.qemu.org/) hypervisor
 
 ```
 brew install qemu
 ```
 
+:round_pushpin: Install `flatcar` VM script
+
+- [ ] Download the `flatcar` QEMU image
+
+```
+wget https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_qemu_image.img.bz2 \
+bzip2 -d flatcar_production_qemu_image.img.bz2
+```
+
+- [ ] Download the `flatcar` shelle script and enable execution
+
+```
+wget https://stable.release.flatcar-linux.net/amd64-usr/current/flatcar_production_qemu.sh \
+chmod +x flatcar_production_qemu.sh
+```
+
+:round_pushpin: Launch the `flatcar` VM 
 
 ```
 ./flatcar_production_qemu.sh
