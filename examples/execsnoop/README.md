@@ -1,5 +1,11 @@
+
+```
 mkdir libbpf-tools-container && cd libbpf-tools-container
-core@localhost ~/libbpf-tools-container $ cat <<EOF > Dockerfile
+```
+
+
+```docker
+cat <<EOF > Dockerfile
 FROM ubuntu:20.04 as builder
 
 RUN set -ex; \
@@ -17,6 +23,8 @@ RUN set -ex; \
     apt-get install -y libelf-dev
 COPY --from=builder /libbpf-tools/bin /usr/bin
 EOF
+```
+
 core@localhost ~/libbpf-tools-container $ docker image ls
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 core@localhost ~/libbpf-tools-container $ IMAGE=li^Cage:tag>
