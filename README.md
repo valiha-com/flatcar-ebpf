@@ -52,7 +52,7 @@ zgrep CONFIG_IKHEADERS /proc/config.gz
 ```
 > CONFIG_IKHEADERS=m
 
-- [ ] Before creating the :toolbox: toolbox environment, let’s load the kheaders kernel module. 
+- [ ] Before creating the :toolbox: toolbox environment, let’s load the `kheaders` kernel module. 
 
 We do it that way to avoid having to mount the folders containing the kernel modules into the toolbox environment we create below. If we mount the kernel modules folder then this step is not needed and the BCC tool will load the module automatically for us.
 
