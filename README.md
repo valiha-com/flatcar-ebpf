@@ -43,6 +43,50 @@ Last login: Thu May  4 07:59:03 UTC 2023 from 10.0.2.2 on pts/0
 Flatcar Container Linux by Kinvolk stable 3510.2.1 for QEMU
 ```
 
+On the FlatCar VM
+
+- [ ] Let’s check that the IKHEADERS config is actually set
+
+```
+zgrep CONFIG_IKHEADERS /proc/config.gz
+```
+> CONFIG_IKHEADERS=m
+
+- [ ] Before creating the :toolbox: toolbox environment, let’s load the kheaders kernel module. 
+
+We do it that way to avoid having to mount the folders containing the kernel modules into the toolbox environment we create below. If we mount the kernel modules folder then this step is not needed and the BCC tool will load the module automatically for us.
+
+```
+sudo modprobe kheaders
+```
+
+```
+lsmod | grep -i kheaders
+```
+> kheaders         	3674112  0
+
+- [ ] Creating the :toolbox: toolbox environment
+
+```
+toolbox --bind=/sys/kernel/debug:/sys/kernel/debug
+```
+> Outputs :
+```yaml
+docker.io/library/fedora:latest:                                                  resolved       |++++++++++++++++++++++++++++++++++++++| 
+index-sha256:a1aff3e01bb667ededb2e4d895a1f1f88b7d329bd22402d4a5ba5e7f1c7a48cb:    done           |++++++++++++++++++++++++++++++++++++++| 
+manifest-sha256:c901180b4ca1a75a287266bf47ca204cc8c03db5cbee26adf7c8ac6f0f7ede3e: done           |++++++++++++++++++++++++++++++++++++++| 
+layer-sha256:133d222e1578e65231a672c7f389e99f4bcce344dd0ed0ded3dfaf50178b04f2:    downloading    |++++++--------------------------------| 11.0 MiB/65.1 MiB 
+config-sha256:83a840c3b816b6f76c9365378267b9d7ca69e60f09d7c7963e79046314794d8e:   done           |++++++++++++++++++++++++++++++++++++++| 
+elapsed: 39.0s                                                                    total:  11.0 M (288.7 KiB/s)  
+
+unpacking linux/amd64 sha256:a1aff3e01bb667ededb2e4d895a1f1f88b7d329bd22402d4a5ba5e7f1c7a48cb...
+done: 10.806778848s	
+sha256:4256f48a29250219371b4dc03e10808bf74199b3100d9f26503b118555985c32
+/var/lib/toolbox/core-docker.io_library_fedora-latest
+Spawning container core-docker.iolibraryfedora-latest on /var/lib/toolbox/core-docker.io_library_fedora-latest.
+Press ^] three times within 1s to kill container.
+[root@localhost ~]# 
+```
 
 # References
 
