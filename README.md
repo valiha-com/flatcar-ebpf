@@ -78,7 +78,7 @@ lsmod | grep -i kheaders
 ```
 > kheaders         	3674112  0
 
-- [ ] Launching the deprecated `Docker` :toolbox: [toolbox](https://github.com/docker-archive/toolbox) 
+- [ ] Launching the deprecated :toolbox: [Docker Toolbox](https://github.com/docker-archive/toolbox) 
 
 ```
 toolbox --bind=/sys/kernel/debug:/sys/kernel/debug
