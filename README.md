@@ -1,5 +1,6 @@
 # flatcar-ebpf
 
+## :a: Install the `flatcar` VM
 
 :round_pushpin: On MacOS :apple: Install the [QEMU](https://www.qemu.org/) hypervisor
 
