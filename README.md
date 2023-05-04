@@ -57,7 +57,7 @@ Flatcar Container Linux by Kinvolk stable 3510.2.1 for QEMU
 
 ## :b: In the FlatCar VM 
 
-- [ ] Let’s check that the IKHEADERS config is actually set
+- [ ] Let’s check that the [IKHEADERS](https://cateee.net/lkddb/web-lkddb/IKHEADERS.html) config is actually set
 
 ```
 zgrep CONFIG_IKHEADERS /proc/config.gz
