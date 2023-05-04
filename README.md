@@ -126,7 +126,7 @@ dnf --version
   Built    : Fedora Project at Wed Mar 15 14:26:01 2023
 ```
 
-- [ ] Install [BCC - Tools](https://github.com/iovisor/bcc) for BPF-based Linux IO analysis, networking, monitoring, and more
+- [ ] Install BCC - Tools for BPF-based Linux IO analysis, networking, monitoring, and more
 
 ```
 dnf install bcc-tools xz -y
@@ -137,5 +137,5 @@ dnf install bcc-tools xz -y
 # References
 
 - [ ] [Using eBPF in Flatcar Container Linux](https://www.flatcar.org/blog/2021/04/using-ebpf-in-flatcar-container-linux/)
-- [ ] BPF Compiler Collection (BCC)
 - [ ] [Linux Socket Filtering aka Berkeley Packet Filter (BPF)](https://www.kernel.org/doc/html/latest/networking/filter.html)
+- [ ] [BPF Compiler Collection (BCC)](https://github.com/iovisor/bcc)
