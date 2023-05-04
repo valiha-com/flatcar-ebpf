@@ -28,6 +28,18 @@ brew install qemu
 ```
 ./flatcar_production_qemu.sh
 ```
+> Ouputs
+```yaml
+qemu-system-x86_64: invalid accelerator kvm
+qemu-system-x86_64: falling back to HVF
+```
+
+- [ ] Press `^C` to exit from VM
+
+```
+^Cqemu-system-x86_64: terminating on signal 2 from pid 25465 (<unknown process>)
+```
+
 
 <img src=images/Flatcar-QEMU.png width='' height='' > </img>
 
