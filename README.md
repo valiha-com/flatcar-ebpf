@@ -55,7 +55,7 @@ Last login: Thu May  4 07:59:03 UTC 2023 from 10.0.2.2 on pts/0
 Flatcar Container Linux by Kinvolk stable 3510.2.1 for QEMU
 ```
 
-On the FlatCar VM
+## :b: In the FlatCar VM 
 
 - [ ] Let’s check that the IKHEADERS config is actually set
 
