@@ -138,3 +138,4 @@ dnf install bcc-tools xz -y
 
 - [ ] [Using eBPF in Flatcar Container Linux](https://www.flatcar.org/blog/2021/04/using-ebpf-in-flatcar-container-linux/)
 - [ ] BPF Compiler Collection (BCC)
+- [ ] [Linux Socket Filtering aka Berkeley Packet Filter (BPF)](https://www.kernel.org/doc/html/latest/networking/filter.html)
