@@ -133,6 +133,9 @@ dnf install bcc-tools xz -y
 ```
 > Outputs :  [Complete!](dnf_install_log.md)
 
+## :o: Examples
+
+[execsnoop](examples/execsnoop)
 
 # References
 
