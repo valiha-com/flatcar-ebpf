@@ -4,7 +4,7 @@ mkdir libbpf-tools-container && cd libbpf-tools-container
 ```
 
 
-```docker
+```yaml
 cat <<EOF > Dockerfile
 FROM ubuntu:20.04 as builder
 
