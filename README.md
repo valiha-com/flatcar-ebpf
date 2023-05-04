@@ -103,7 +103,8 @@ Press ^] three times within 1s to kill container.
 ```
 dnf install bcc-tools xz -y
 ```
-> Outputs :
+> Outputs :  [Complete!](dnf_install_log.md)
+
 
 - [ ] Kill Container press `^]` :three: times within `1s`
 
