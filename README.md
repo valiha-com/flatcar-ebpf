@@ -31,6 +31,18 @@ brew install qemu
 
 <img src=images/Flatcar-QEMU.png width='' height='' > </img>
 
+- [ ] Login into the VM on another terminal
+
+```
+ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -p 2222 core@localhost
+```
+> Outputs :
+```yaml
+Warning: Permanently added '[localhost]:2222' (ED25519) to the list of known hosts.
+Last login: Thu May  4 07:59:03 UTC 2023 from 10.0.2.2 on pts/0
+Flatcar Container Linux by Kinvolk stable 3510.2.1 for QEMU
+```
+
 
 # References
 
