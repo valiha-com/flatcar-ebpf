@@ -90,3 +90,22 @@ Step 5/5 : COPY --from=builder /libbpf-tools/bin /usr/bin
 Successfully built 5e3959f1596a
 Successfully tagged libbpf:1.0
 ```
+
+- [ ] Start the container running `libbpf-tools`
+
+```
+docker container run \
+        --interactive --tty  \
+        --privileged \
+        --volume /sys/kernel/debug:/sys/kernel/debug \
+        libbpf-tools:1.0
+```
+> root@d80c76a6e764:/# 
+
+```
+execsnoop
+```
+> Returns :
+```yaml
+PCOMM            PID    PPID   RET ARGS
+```
