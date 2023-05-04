@@ -78,7 +78,7 @@ lsmod | grep -i kheaders
 ```
 > kheaders         	3674112  0
 
-- [ ] Launching the deprecated :toolbox: [Docker Toolbox](https://github.com/docker-archive/toolbox) 
+- [ ] Launching the deprecated :toolbox: [Docker Toolbox](https://github.com/docker-archive/toolbox) to get into the container
 
 ```
 toolbox --bind=/sys/kernel/debug:/sys/kernel/debug
@@ -99,6 +99,14 @@ sha256:4256f48a29250219371b4dc03e10808bf74199b3100d9f26503b118555985c32
 Spawning container core-docker.iolibraryfedora-latest on /var/lib/toolbox/core-docker.io_library_fedora-latest.
 Press ^] three times within 1s to kill container.
 [root@localhost ~]# 
+```
+
+- [ ] Kill Container press `^]` :three: times within `1s`
+
+```yaml
+[root@localhost ~]# 
+Container core-docker.iolibraryfedora-latest terminated by signal KILL.
+core@localhost ~ $ 
 ```
 
 ## :ab: In the container
@@ -126,13 +134,6 @@ dnf install bcc-tools xz -y
 > Outputs :  [Complete!](dnf_install_log.md)
 
 
-- [ ] Kill Container press `^]` :three: times within `1s`
-
-```yaml
-[root@localhost ~]# 
-Container core-docker.iolibraryfedora-latest terminated by signal KILL.
-core@localhost ~ $ 
-```
 # References
 
 - [ ] [Using eBPF in Flatcar Container Linux](https://www.flatcar.org/blog/2021/04/using-ebpf-in-flatcar-container-linux/)
