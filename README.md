@@ -100,6 +100,8 @@ Press ^] three times within 1s to kill container.
 [root@localhost ~]# 
 ```
 
+- [ ] Install [BCC - Tools](https://github.com/iovisor/bcc) for BPF-based Linux IO analysis, networking, monitoring, and more
+
 ```
 dnf install bcc-tools xz -y
 ```
