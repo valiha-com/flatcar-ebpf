@@ -1,8 +1,16 @@
+# Example `execsnoop`
+
+## :a: Create the environment
+
+- [ ] In the `flatcar` VM
+
+* Create a working directory folder
 
 ```
 mkdir libbpf-tools-container && cd libbpf-tools-container
 ```
 
+* Produce a `Dockerfile` manifest
 
 ```yaml
 cat <<EOF > Dockerfile
@@ -25,8 +33,10 @@ COPY --from=builder /libbpf-tools/bin /usr/bin
 EOF
 ```
 
+* Build the `libbpf-tools` image
+
 ```
-docker build . --tag libbpf-tools:1.0
+docker image build . --tag libbpf-tools:1.0
 ```
 > Outputs :
 ```yaml
